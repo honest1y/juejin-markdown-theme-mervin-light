@@ -20,26 +20,47 @@ $line-space: 22px;
     margin-bottom: 10px;
     padding-bottom: 5px;
   }
+
   h1 {
-    font-size: 30px;
-    margin-bottom: 5px;
+    font-size: 25px;
+    color: #0052d9;
   }
+
+  h2:before {
+    content: "";
+    display: flex;
+    opacity: .36;
+    float: right;
+    width: 200px;
+    height: 10px;
+    margin-top: 25px;
+    justify-content: flex-end;
+    border-top-left-radius: 20px;
+    background-color: #0052d9;
+  }
+
   h2 {
-    padding-bottom: 12px;
-    font-size: 24px;
-    border-bottom: 1px solid #ececec;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0052d9;
+    border-bottom: 3px solid #0052d9;
   }
   h3 {
+    border-left: 3px solid #0052d9;
     font-size: 18px;
+    padding-left: 8px;
     padding-bottom: 0;
   }
   h4 {
+    color: #0052d9;
     font-size: 16px;
   }
   h5 {
+    color: #0052d9;
     font-size: 15px;
   }
   h6 {
+    color: #0052d9;
     margin-top: 5px;
   }
 
@@ -67,8 +88,8 @@ $line-space: 22px;
     word-break: break-word;
     border-radius: 2px;
     overflow-x: auto;
-    background-color: #fff5f5;
-    color: #ff502c;
+    background-color: #f7f7f7;
+    color: #d80e3dcc;
     font-size: 0.87em;
     padding: 0.065em 0.4em;
   }
@@ -110,7 +131,7 @@ $line-space: 22px;
   }
   thead {
     background: #f6f6f6;
-    color: #000;
+    color: #0052d9;
     text-align: left;
   }
   tr:nth-child(2n) {
@@ -119,18 +140,21 @@ $line-space: 22px;
   th,
   td {
     padding: 12px 7px;
-    line-height: 24px;
-  }
-  td {
+    line-height: 18px;
     min-width: 120px;
   }
 
+  strong {
+    font-weight: bold;
+    color: #0052d9;
+  }
+
   blockquote {
-    color: #666;
+    color: #68736d;
     padding: 1px 23px;
     margin: 22px 0;
-    border-left: 4px solid #cbcbcb;
-    background-color: #f8f8f8;
+    border-left: 4px solid #0052d9;;
+    background-color: #0089d912;
     &::after {
       display: block;
       content: '';
@@ -163,6 +187,9 @@ $line-space: 22px;
   ol li {
     padding-left: 6px;
   }
+  ::marker {
+    color: #0052d9
+  }
   
   .contains-task-list {
     padding-left: 0;
@@ -175,12 +202,15 @@ $line-space: 22px;
   @media (max-width: 720px) {
     h1 {
       font-size: 24px;
+      color: #00A971;
     }
     h2 {
       font-size: 20px;
+      color: #00A971;
     }
     h3 {
       font-size: 18px;
+      color: #00A971;
     }
   }
 }
